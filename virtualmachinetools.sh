@@ -1,3 +1,8 @@
+echo "Run this script as : . ./virtualmachinetools.sh"
+echo "If not running like above please CTRL+C and rerun as above"
+echo -e "\033[45m[+][+] Sleeping for 6 seconds before running [+][+]\033[m"
+sleep 6
+
 echo -e "\033[45m[+][+] Updating Keys [+][+]\033[m"
 sudo wget https://archive.kali.org/archive-key.asc -O /etc/apt/trusted.gpg.d/kali-archive-keyring.asc 
 
