@@ -11,6 +11,10 @@ cd ~/
 mkdir Tools
 cd ~/Tools
 sudo apt install python3-pip
+echo  "\033[45m[+][+] Installing dirsearch [+][+]\033[m"
+git clone https://github.com/maurosoria/dirsearch.git --depth 1
+cd dirsearch
+pipx install .
 
 echo  "\033[45m[+][+] Installing PIPX [+][+]\033[m"
 sudo apt install pipx
