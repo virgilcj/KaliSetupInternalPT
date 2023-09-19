@@ -191,5 +191,14 @@ echo  "\033[45m[+][+] Installing secretsdump [+][+]\033[m"
 cd ~/Tools
 git clone https://github.com/fin3ss3g0d/secretsdump.py
 
+
 echo  "\033[45m[+][+] Download Hacktricks Offline [+][+]\033[m"
-echo " Link to download hacktricks offline: https://drive.google.com/file/d/19QsncIrcjfjvQ1xI58KuTKnU6be3EXZy/view?usp=sharing "
+echo " Link to download hacktricks offline: https://drive.google.com/file/d/19QsncIrcjfjvQ1xI58KuTKnU6be3EXZy/view?usp=sharing"
+
+#Nessus licence SNVE-ERJF-LL74-YLXW
+
+echo  "\033[45m[+][+] RUN SCCMHUNTER USING PYTHON VENV [+][+]\033[m"
+cd ~/Tools
+git clone https://github.com/W01fh4cker/VcenterKit
+cd VcenterKit
+pip install -r requirements.txt
