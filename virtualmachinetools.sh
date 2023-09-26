@@ -11,10 +11,7 @@ cd ~/
 mkdir Tools
 cd ~/Tools
 sudo apt install python3-pip
-echo  "\033[45m[+][+] Installing dirsearch [+][+]\033[m"
-git clone https://github.com/maurosoria/dirsearch.git --depth 1
-cd dirsearch
-pipx install .
+
 
 echo  "\033[45m[+][+] Installing PIPX [+][+]\033[m"
 sudo apt install pipx
@@ -25,6 +22,12 @@ echo 'export PATH=$PATH:/home/kali/.local/bin' >> ~/.zshrc
 source ~/.zshrc
 echo $PATH
 
+echo  "\033[45m[+][+] Installing dirsearch [+][+]\033[m"
+cd ~/Tools
+git clone https://github.com/maurosoria/dirsearch.git --depth 1
+cd dirsearch
+pipx install .
+
 #!/usr/bin/zsh
 wget -qO - https://nim-lang.org/choosenim/init.sh | sh
 sleep 3
@@ -32,8 +35,6 @@ echo 'export PATH=$PATH:/home/kali/.nimble/bin' >> ~/.zshrc
 sleep 5
 source ~/.zshrc
 echo $PATH
-
-sudo apt remove crackmapexec
 
 echo  "\033[45m[+][+] Installing Nimplant C2 [+][+]\033[m"
 cd ~/Tools
@@ -84,10 +85,11 @@ pipx install powerpwn
 #go get github.com/KyleBanks/XOREncryption/Go
 
 echo  "\033[45m[+][+] Installing Crackmapexec 6.0.1 [+][+]\033[m"
-wget https://raw.githubusercontent.com/virgilcj/PublicTools/main/CrackMapExec-6.0.1.zip
-unzip CrackMapExec-6.0.1.zip
-cd CrackMapExec-6.0.1
-pipx install .
+sudo apt remove crackmapexec
+cd ~/Tools
+git clone https://github.com/byt3bl33d3r/CrackMapExec
+cd CrackMapExec
+poetry install
 
 echo  "\033[45m[+][+] Installing ADCSKiller [+][+]\033[m"
 cd ~/Tools
@@ -95,6 +97,7 @@ git clone https://github.com/drwetter/testssl.sh
 
 cd ~/Tools
 git clone https://github.com/ly4k/Certipy && cd Certipy && sudo pipx install .
+sudo mv /usr/bin/certipy-ad /usr/bin/certipy
 
 cd ~/Tools
 git clone https://github.com/p0dalirius/Coercer && cd Coercer && pip install -r requirements.txt && pipx install .
@@ -147,11 +150,11 @@ echo  "\033[45m[+][+] Installing Chisel [+][+]\033[m"
 curl https://i.jpillora.com/chisel! | bash
 
 
-echo  "\033[45m[+][+] Installing Adalanche : ACL Visualizer [+][+]\033[m"
-cd ~/Tools
-git clone https://github.com/lkarlslund/Adalanche
-cd Adalanche
-pwsh ./build.ps1
+#echo  "\033[45m[+][+] Installing Adalanche : ACL Visualizer [+][+]\033[m"
+#cd ~/Tools
+#git clone https://github.com/lkarlslund/Adalanche
+#cd Adalanche
+#pwsh ./build.ps1
 
 echo  "\033[45m[+][+] Installing GPOddity for GPO Abuse [+][+]\033[m"
 cd ~/Tools 
@@ -178,8 +181,18 @@ pip3 install -r requirements.txt
 python3 sccmhunter.py
 deactivate
 
+echo "\033[45m[+][+] Copy and use PXETheif in Windows [+][+]\033[m"
+cd ~/Tools
+git clone https://github.com/MWR-CyberSec/PXEThief
 
-echo  "\033[45m[+][+] RUN SCCMHUNTER USING PYTHON VENV [+][+]\033[m"
+echo "\033[45m[+][+] Active-Directory-Spotlights [+][+]\033[m"
+cd ~/Tools
+git clone https://github.com/sse-secure-systems/Active-Directory-Spotlights
+cd Active-Directory-Spotlights/SCCM-MECM/pxethiefy
+pip install -r requirements.txt
+python pxethiefy.py 
+
+echo  "\033[45m[+][+] Vcenter Exploitation Toolkit [+][+]\033[m"
 cd ~/Tools
 git clone https://github.com/W01fh4cker/VcenterKit
 cd VcenterKit
@@ -197,8 +210,3 @@ echo " Link to download hacktricks offline: https://drive.google.com/file/d/19Qs
 
 #Nessus licence SNVE-ERJF-LL74-YLXW
 
-echo  "\033[45m[+][+] RUN SCCMHUNTER USING PYTHON VENV [+][+]\033[m"
-cd ~/Tools
-git clone https://github.com/W01fh4cker/VcenterKit
-cd VcenterKit
-pip install -r requirements.txt
