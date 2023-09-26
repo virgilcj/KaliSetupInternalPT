@@ -5,7 +5,7 @@ echo  "\033[45m[+][+] Updating Keys [+][+]\033[m"
 sudo wget https://archive.kali.org/archive-key.asc -O /etc/apt/trusted.gpg.d/kali-archive-keyring.asc 
 
 echo  "\033[45m[+][+] APT UPDATE [+][+]\033[m"
-sudo apt update -y
+sudo apt update -y && sudo apt upgrade -y
 
 cd ~/
 mkdir Tools
