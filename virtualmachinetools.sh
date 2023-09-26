@@ -84,6 +84,11 @@ pipx install powerpwn
 #go get github.com/fatih/color
 #go get github.com/KyleBanks/XOREncryption/Go
 
+echo  "\033[45m[+][+] Installing Poetry [+][+]\033[m"
+curl -sSL https://install.python-poetry.org | python3 -
+source ~/.zshrc
+#this above source was not tested
+
 echo  "\033[45m[+][+] Installing Crackmapexec 6.0.1 [+][+]\033[m"
 sudo apt remove crackmapexec
 cd ~/Tools
