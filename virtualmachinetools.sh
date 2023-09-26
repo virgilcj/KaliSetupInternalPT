@@ -10,11 +10,11 @@ sudo apt update -y && sudo apt upgrade -y
 cd ~/
 mkdir Tools
 cd ~/Tools
-sudo apt install python3-pip
+sudo apt install -y python3-pip
 
 
 echo  "\033[45m[+][+] Installing PIPX [+][+]\033[m"
-sudo apt install pipx
+sudo apt install -y pipx
 pipx install updog
 pipx ensurepath
 sleep 3
@@ -39,7 +39,7 @@ echo $PATH
 echo  "\033[45m[+][+] Installing Nimplant C2 [+][+]\033[m"
 cd ~/Tools
 git clone https://github.com/chvancooten/NimPlant
-sudo apt install mingw-w64
+sudo apt install -y mingw-w64
 cd NimPlant
 cd client; nimble install -d
 pip3 install -r ../server/requirements.txt
@@ -210,3 +210,8 @@ echo " Link to download hacktricks offline: https://drive.google.com/file/d/19Qs
 
 #Nessus licence SNVE-ERJF-LL74-YLXW
 
+echo "\033[45m[+][+] Install Eyewitness[+][+]\033[m"
+cd ~/Tools
+git clone https://github.com/RedSiege/EyeWitness
+cd EyeWitness/Python/setup
+sudo ./setup.sh
