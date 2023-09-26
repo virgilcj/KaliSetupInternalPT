@@ -89,11 +89,12 @@ curl -sSL https://install.python-poetry.org | python3 -
 source ~/.zshrc
 #this above source was not tested
 
-echo  "\033[45m[+][+] Installing Crackmapexec 6.0.1 [+][+]\033[m"
+echo  "\033[45m[+][+] Installing Crackmapexec 6.1 [+][+]\033[m"
 sudo apt remove crackmapexec
 cd ~/Tools
 git clone https://github.com/byt3bl33d3r/CrackMapExec
 cd CrackMapExec
+echo "\033[45m[+][+] If crackmapexec does not install here, then Ctrl+c and restart system and install at the end [+][+]\033[m"
 poetry install
 
 echo  "\033[45m[+][+] Installing ADCSKiller [+][+]\033[m"
