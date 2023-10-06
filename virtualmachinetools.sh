@@ -22,11 +22,11 @@ echo 'export PATH=$PATH:/home/kali/.local/bin' >> ~/.zshrc
 source ~/.zshrc
 echo $PATH
 
-echo  "\033[45m[+][+] Installing dirsearch [+][+]\033[m"
-cd ~/Tools
-git clone https://github.com/maurosoria/dirsearch.git --depth 1
-cd dirsearch
-pipx install .
+#echo  "\033[45m[+][+] Installing dirsearch [+][+]\033[m"
+#cd ~/Tools
+#git clone https://github.com/maurosoria/dirsearch.git --depth 1
+#cd dirsearch
+#pipx install .
 
 #!/usr/bin/zsh
 wget -qO - https://nim-lang.org/choosenim/init.sh | sh
@@ -170,11 +170,11 @@ pip install -r requirements.txt
 
 
 #web
-echo  "\033[45m[+][+] Installing Kiterunner for API Testing [+][+]\033[m"
-cd ~/Tools 
-wget https://github.com/assetnote/kiterunner/releases/download/v1.0.2/kiterunner_1.0.2_linux_amd64.tar.gz
-tar -xvf kiterunner_1.0.2_linux_amd64.tar.gz
-sudo mv kr /usr/local/bin/
+#echo  "\033[45m[+][+] Installing Kiterunner for API Testing [+][+]\033[m"
+#cd ~/Tools 
+#wget https://github.com/assetnote/kiterunner/releases/download/v1.0.2/kiterunner_1.0.2_linux_amd64.tar.gz
+#tar -xvf kiterunner_1.0.2_linux_amd64.tar.gz
+#sudo mv kr /usr/local/bin/
 
 #SCCM tools 
 echo  "\033[45m[+][+] Installing SCCMHUNTER [+][+]\033[m"
