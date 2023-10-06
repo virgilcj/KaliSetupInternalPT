@@ -111,6 +111,13 @@ git clone https://github.com/p0dalirius/Coercer && cd Coercer && pip install -r 
 cd ~/Tools
 git clone https://github.com/grimlockx/ADCSKiller/ && cd ADCSKiller && sudo pip install -r requirements.txt
 
+echo  "\033[45m[+][+] Installing ADCSYNC [+][+]\033[m"
+cd ~/Tools
+git clone https://github.com/JPG0mez/adcsync.git
+cd adcsync
+pip3 install -r requirements.txt
+
+
 echo  "\033[45m[+][+] Downloading DFSCoerce [+][+]\033[m"
 cd ~/Tools
 git clone https://github.com/Wh04m1001/DFSCoerce
