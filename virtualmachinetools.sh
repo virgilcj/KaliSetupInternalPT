@@ -228,3 +228,10 @@ cd ~/Tools
 git clone https://github.com/RedSiege/EyeWitness
 cd EyeWitness/Python/setup
 sudo ./setup.sh
+
+cd ~/Tools
+git clone https://github.com/ShutdownRepo/pywhisker
+
+git clone https://github.com/JPG0mez/adcsync.git
+cd adcsync
+pip3 install -r requirements.txt
