@@ -93,9 +93,9 @@ echo  "\033[45m[+][+] Installing Crackmapexec 6.1 [+][+]\033[m"
 sudo apt remove crackmapexec
 cd ~/Tools
 git clone https://github.com/byt3bl33d3r/CrackMapExec
-cd CrackMapExec
-echo "\033[45m[+][+] If crackmapexec does not install here, then Ctrl+c and restart system and install at the end [+][+]\033[m"
-poetry install
+#cd CrackMapExec
+#echo "\033[45m[+][+] If crackmapexec does not install here, then Ctrl+c and restart system and install at the end [+][+]\033[m"
+#poetry install
 
 echo  "\033[45m[+][+] Installing ADCSKiller [+][+]\033[m"
 cd ~/Tools
@@ -235,3 +235,5 @@ git clone https://github.com/ShutdownRepo/pywhisker
 git clone https://github.com/JPG0mez/adcsync.git
 cd adcsync
 pip3 install -r requirements.txt
+
+sudo apt install mongo-tools
