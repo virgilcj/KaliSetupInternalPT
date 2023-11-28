@@ -237,3 +237,6 @@ cd adcsync
 pip3 install -r requirements.txt
 
 sudo apt install mongo-tools
+
+#Download Rockyou2021 from here: https://download.weakpass.com/wordlists/1943/rockyou2021.7z
+echo "Download rockyou2021 from here https://download.weakpass.com/wordlists/1943/rockyou2021.7z"
