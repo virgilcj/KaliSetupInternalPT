@@ -241,4 +241,9 @@ sudo apt install mongo-tools
 #Download Rockyou2021 from here: https://download.weakpass.com/wordlists/1943/rockyou2021.7z
 echo "Download rockyou2021 from here https://download.weakpass.com/wordlists/1943/rockyou2021.7z"
 
+cd ~/Tools
+git clone https://github.com/wearecaster/Above
+cd Above
+sudo python3 setup.py install
+echo "run like sudo above --interface eth0 --timer 120"
 echo "Install https://pypi.org/project/CredSLayer/ Manually as sudo"
