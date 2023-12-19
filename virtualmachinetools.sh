@@ -247,3 +247,7 @@ cd Above
 sudo python3 setup.py install
 echo "run like sudo above --interface eth0 --timer 120"
 echo "Install https://pypi.org/project/CredSLayer/ Manually as sudo"
+
+cd ~/Tools
+git clone https://github.com/skelsec/evilrdp
+echo "Install if needed"
